@@ -871,6 +871,12 @@ class CodebaseResource(
         ),
     )
 
+    license_detection_issues = models.JSONField(
+        blank=True,
+        default=list,
+        help_text=_("List of license detection issues."),
+    )
+
     objects = CodebaseResourceQuerySet.as_manager()
 
     class Meta:

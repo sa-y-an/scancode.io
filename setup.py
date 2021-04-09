@@ -60,6 +60,7 @@ setup(
             "load_inventory = scanpipe.pipelines.load_inventory:LoadInventory",
             "root_filesystems = scanpipe.pipelines.root_filesystems:RootFS",
             "scan_codebase = scanpipe.pipelines.scan_codebase:ScanCodebase",
+            "analyze_scan = scanpipe.pipelines.analyze_scan:AnalyzeScan",
         ],
     },
     classifiers=[
