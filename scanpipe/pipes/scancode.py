@@ -140,7 +140,6 @@ def scan_file(location):
     location_rid = location, 0
     _, _, errors, _, results, _ = scancode_cli.scan_resource(location_rid, scanners)
 
-    print("results", results)
     return results, errors
 
 
